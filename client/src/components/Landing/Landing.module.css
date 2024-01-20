@@ -1,0 +1,36 @@
+.landingcontainer{
+  
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+    
+    background-image: url("C:\Users\Mi_Compu\Desktop\PIdogs\PI-Dogs-main\dogs.jpg") ;
+  /* background-size: cover; */
+  
+  background-position: center center; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 60vh;
+}
+
+/* .button{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.text{
+  background-color: green;
+  border-radius: 0.5rem;
+  font-size: 15px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+} */
