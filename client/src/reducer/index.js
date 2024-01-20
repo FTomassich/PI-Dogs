@@ -14,7 +14,7 @@
             return{
                 ...state,
                 dogs: action.payload,
-                allDogs: action.payload, // copia del estado que siempre tenga todos los perros
+                allDogs: action.payload, // copia del estado que siempre tenga todos los perro
                 
             }
             
