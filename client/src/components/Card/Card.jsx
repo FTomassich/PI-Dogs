@@ -1,11 +1,17 @@
 import React from 'react'
 import style from '../Card/Card.module.css';
+import { Link } from 'react-router-dom';
 
-const Card = ({image,name,temperament,weight}) => {
+const Card = ({id,image,name,temperament,weight}) => {
   return (
 
 <div className={style.card}>
-<h2 className={style.itemName}>Name: {name} </h2>
+ {/* Envuelve solo el nombre del perro con Link */}
+ <h2 className={style.itemName}>
+        <Link to={`/detail/${id}`} className={style.cardLink}>
+          {name}
+        </Link>
+      </h2>
 <div className={style.image}>
 <img className={style.image}src={image} alt="img not found" />
 </div>

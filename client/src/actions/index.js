@@ -24,7 +24,7 @@ export function getDogs() {
             });
 
         } catch (error) {
-            // Manejar errores si es necesario
+            
             console.error('Error al obtener perreques:', error);
         }}}
 
@@ -91,6 +91,21 @@ export const filterByTemps = (temperament) => ({
 }
 };
   
+
+export function getDetail (id){
+    return async function (dispatch){
+        try{
+            var json= await axios.get ("http://localhost:3001/dogs/" + id)
+            return dispatch({
+                type: 'GET_DETAILS',
+                payload: json.data
+            })
+
+        }catch (error) {
+            console.log(error)
+        }
+    }
+};
 
 
 

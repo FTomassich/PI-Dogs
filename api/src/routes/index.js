@@ -27,14 +27,15 @@ router.get ('/dogs', async (req, res)=> {
 });
 
 //Ruta para búsqueda por ID
-router.get ('/dogs/:idRaza', async (req, res) => {
-    const idRaza = parseInt(req.params.idRaza)
-    let totalDogs= await getAllDogs();
+router.get ('/dogs/:id', async (req, res) => {
+    const id = parseInt(req.params.id);
+   const totalDogs= await getAllDogs();
+   if (!isNaN(id)) {
+    let dogId= await totalDogs.filter(el => el.id ===id)
 
-    const RazaById= await totalDogs.find(el => el.id === (idRaza));
-    if (RazaById) {
-        res.status (200).send (RazaById)
-    } else {
+    dogId.length?
+    res.status(200).json(dogId) :
+    
         res.status (404).send ("No se encontró el perreque");
     }
 

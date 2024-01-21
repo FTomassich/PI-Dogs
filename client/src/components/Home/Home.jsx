@@ -41,7 +41,7 @@ const paginado = (pageNumber) => {
     }
 
 
-    //Handler para filtrar según el select
+    //Handler para filtrar por temps según el select
 
     function handleFilterTemps(e) {
         const selectedTemperament = e.target.value;
@@ -134,7 +134,7 @@ const paginado = (pageNumber) => {
     <div className= {style.containerCards}>
 
         {currentDogs && currentDogs.map((el)=>(
-        <Card name={el.name} image={el.image} weight={el.weight} temperament={el.temperament}/>
+        <Card id={el.id} name={el.name} image={el.image} weight={el.weight} temperament={el.temperament}/>
         ))}
         
     </div>

@@ -3,6 +3,7 @@
  //Declaro un reducer y luego para comenzar un estado inicial.
  const initialState= {
     dogs: [],
+    detail: [],
     allDogs: [],
     temperaments: []
  }
@@ -18,6 +19,12 @@
                 
             }
             
+            case 'GET_DETAILS':
+                return{
+                    ...state, 
+                    detail: action.payload
+
+                }
             
             case 'GET_TEMPS':
                 return {

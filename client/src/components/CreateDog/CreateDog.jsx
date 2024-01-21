@@ -43,10 +43,7 @@ function handleSelect(e){
     })
 }
 
-// const validateWeight = (value) => {
-//   const regex = /^\d+-\d+$/; // Expresión regular para un número seguido de guion y otro número
-//   return regex.test(value);
-// }
+
 
 //Manejo del Submit (botón)
 function handleSubmit(e) {
@@ -72,7 +69,7 @@ function handleSubmit(e) {
 
     // history.push('/home');
   } else {
-    // Hay errores, puedes manejarlos de alguna manera (por ejemplo, mostrarlos al usuario)
+    
     console.log("Formulario no enviado debido a errores:", formErrors);
     alert("Corrige los errores antes de enviar el formulario.");
   }

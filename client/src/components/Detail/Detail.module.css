@@ -1,0 +1,96 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    
+    width: 400px; /* Ancho deseado */
+    height: 400px; 
+
+    /* margenes */
+   margin:40px;
+    /* fondo */
+    background: transparent;
+    /* backdrop-filter: blur(3px); */
+
+     /* texto */
+    
+     font-family: 'Lato', sans-serif;
+     
+     color: rgb(255, 255, 255);
+    /* bordes  */
+    border-style:ridge;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0); 
+    border-radius: 0.5rem;
+    
+
+  
+    /* size-adjust: center; */
+
+   
+    box-shadow: #000000e1 0 5px 15px;
+    &:hover {
+    
+        transform: scale(1.04);
+    }
+
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    border-radius: 0.5rem;
+   
+      
+       height: 200px;
+       width: 340px;
+   }
+
+   .itemContainer{
+    
+    
+    
+margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 400px;
+    height: 20vh;
+    justify-content: center;
+   
+   }
+
+   .itemName {
+    border-radius: 0.5rem;
+    box-shadow: #285719e1 0 3px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    background-color: rgba(26, 90, 17, 0.973);
+    align-items: center;
+    font-size: 16px; 
+    width: 340px;
+    height: 30px
+    
+   }
+
+   .itemCard {
+    box-shadow: #000000c5 0 3px 15px;
+ 
+    border-radius: 0.5rem;
+    width: 340px;
+   height: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.897);
+    font-size: 14px; 
+   }
