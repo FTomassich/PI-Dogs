@@ -26,22 +26,33 @@ router.get ('/dogs', async (req, res)=> {
 
 });
 
-//Ruta para búsqueda por ID
-router.get ('/dogs/:id', async (req, res) => {
-    const id = parseInt(req.params.id);
-   const totalDogs= await getAllDogs();
-   if (!isNaN(id)) {
-    let dogId= await totalDogs.filter(el => el.id ===id)
 
-    dogId.length?
-    res.status(200).json(dogId) :
-    
-        res.status (404).send ("No se encontró el perreque");
+
+router.get('/dogs/:id', async (req, res) => {
+    const id = req.params.id;
+    const totalDogs = await getAllDogs();
+
+    if (!isNaN(id)) {
+        // Si es un número, convertirlo a entero
+        const numericId = parseInt(id, 10);
+        let dogId = await totalDogs.filter(el => el.id === numericId);
+
+        if (dogId.length) {
+            res.status(200).json(dogId);
+        } else {
+            res.status(404).send("No se encontró el perreque");
+        }
+    } else {
+        // Si no es un número, buscar directamente
+        let dogId = await totalDogs.filter(el => el.id === id);
+
+        if (dogId.length) {
+            res.status(200).json(dogId);
+        } else {
+            res.status(404).send("No se encontró el perreque");
+        }
     }
-
-}
-
-);
+});
 
 //Ruta que trae los temperamentos
 

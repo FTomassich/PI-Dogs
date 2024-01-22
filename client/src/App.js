@@ -10,10 +10,11 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
+      <Route exact path= '/detail/:id' element= {<Detail/>}/>
         <Route exact path= '/' element= {<Landing/>}/>
         <Route exact path= '/home' element= {<Home/>}/>
         <Route exact path= '/dogs' element= {<CreateDog/>}/>
-        <Route exact path= '/detail/id' element= {<Detail/>}/>
+        
       </Routes>
       
     </div>
