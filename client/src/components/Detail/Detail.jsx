@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { useParams,} from 'react-router-dom';
-import { getDetail } from '../../actions';
+import { getDetail, resetDetail} from '../../actions';
 import style from '../Detail/Detail.module.css';
 
 const Detail = (props) => {
@@ -13,7 +13,12 @@ const Detail = (props) => {
 
   useEffect(() => {
     dispatch(getDetail(id));
-  }, [dispatch ]);
+    return () => {
+      // Realiza acciones de limpieza aquí, si es necesario
+      // Por ejemplo, podrías enviar una acción para restablecer el estado de detalle
+      dispatch(resetDetail());
+    };
+  }, [dispatch, id ]);
 
   const myDog = useSelector((state) => state.detail);
 

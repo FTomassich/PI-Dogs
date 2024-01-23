@@ -8,7 +8,7 @@ const Card = ({id,image,name,temperament,weight}) => {
 <div className={style.card}>
  {/* Envuelve solo el nombre del perro con Link */}
  <h2 className={style.itemName}>
-        <Link to={`/detail/${id}`} className={style.cardLink}>
+        <Link to={`/detail/${id}`} className={style.itemName}>
           {name}
         </Link>
       </h2>

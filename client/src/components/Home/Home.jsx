@@ -6,7 +6,7 @@ import Card from '../Card/Card';
 import Paginado from '../Paginado/Paginado';
 import style from '../Home/Home.module.css'
 //importación de actions
-import { getDogs, filterOrigin, orderByName, getTemps, filterByTemps } from '../../actions';
+import { getDogs, filterOrigin, orderByName, getTemps, filterByTemps, orderByWeight } from '../../actions';
 import SearchBar from '../SearchBar/SearchBar';
 
 
@@ -62,6 +62,15 @@ const paginado = (pageNumber) => {
       };
 
 
+      function handleOrderByWeight (e){
+        e.preventDefault();
+        dispatch(orderByWeight(e.target.value))
+        setCurrentPage(1);
+        setOrden (`Ordenado ${e.target.value}`)
+
+      
+      }
+
   return (
     
     <div className={style.containerHome}> 
@@ -110,7 +119,7 @@ const paginado = (pageNumber) => {
 
         <div className={style.select}>
         <h3 className={style.h3}>Order by weight</h3>
-            <select>
+            <select onChange={e=>handleOrderByWeight(e)}>
             <option disabled defaultValue>Ordenar por Peso</option>
           <option value="asc">Ascendente🔼</option>
           <option value="desc">Descendente🔽</option>

@@ -32,6 +32,47 @@
       
    }
 
+   @media (max-width:1140px){
+    .containerCards {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       width: auto;
+       place-items: center;
+       justify-content: space-between;
+       
+           align-content: center;
+           justify-items: center;
+          
+   }
+    }
+
+   @media (max-width: 768px) {
+     .containerCards {  
+       grid-template-columns: 1fr; 
+       place-items: center;
+justify-content: space-between;
+
+   align-content: center;
+   justify-items: center;
+  
+     }
+   }
+   
+     /* Otra media query si es necesario */
+     @media (max-width: 480px) {
+       .containerCards {
+           grid-template-columns: 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
+          width: auto;
+          place-items: center;
+justify-content: space-between;
+
+   align-content: center;
+   justify-items: center;
+  
+     }
+   
+   }
+
    .containerSelect{
     
     background-color: transparent;
@@ -56,6 +97,20 @@
     place-items: center;
     justify-items: center; */
    }
+
+   @media (max-width:1140px){
+    .containerSelect {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       width: auto;
+       place-items: center;
+       justify-content: space-between;
+       
+           align-content: center;
+           justify-items: center;
+          
+   }}
 
    .select {
     font-family: 'Open Sans', sans-serif; /* Intentará usar Open Sans, y si no está disponible, usará una fuente sans-serif genérica */

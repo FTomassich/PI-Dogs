@@ -43,6 +43,14 @@ export function orderByName(payload){
     }
 }
 
+
+export function orderByWeight(payload){
+    return {
+        type: 'ORDER_BY_WEIGHT',
+        payload
+    }
+}
+
 export function searchByName (name) {  //el name me llega por "payload" (input del searchbar)
     return async function (dispatch){
         try{
@@ -122,6 +130,11 @@ export function getDetail(id) {
     };
 }
 
+export const resetDetail = () => {
+    return {
+      type: 'RESET_DETAIL',
+    };
+  };
 
 
 
