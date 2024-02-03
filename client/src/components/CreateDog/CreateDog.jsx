@@ -166,9 +166,12 @@ function handleSubmit(e) {
                 })}
           </select>
           </div>
+          
           <div className={style.containertemps}>
           <ul className={style.ul}><li className={style.lis}>{input.temperament && input.temperament.map(el => el + " ,")}</li></ul>
+          
           </div>
+          
           <div className={style.button}>
           <button type='submit'
           >Create Dog🐶</button></div>

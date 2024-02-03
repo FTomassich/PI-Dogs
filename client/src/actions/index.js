@@ -1,26 +1,15 @@
 import axios from 'axios';
 
-//Aquí sucede la conexión entre back y front
-// export function getDogs() {
-//     return async function (dispatch){
-//         var json = await axios.get("http://localhost:3001/dogs");
-//         return dispatch ({
-//             type: 'GET_DOGS',
-//             payload: json.data
-
-
-//         })
-//     }}
-    
 
 export function getDogs() {
     return async function (dispatch) {
         try {
-            const response = await axios.get("http://localhost:3001/dogs");
+            const response = await fetch("http://localhost:3001/dogs");
+            const data= await response.json()
 
             dispatch({
                 type: 'GET_DOGS',
-                payload: response.data
+                payload:data
             });
 
         } catch (error) {
@@ -99,21 +88,6 @@ export const filterByTemps = (temperament) => ({
 }
 };
   
-
-// export function getDetail (id){
-//     return async function (dispatch){
-//         try{
-//             var json= await axios.get ("http://localhost:3001/dogs/" + id)
-//             return dispatch({
-//                 type: 'GET_DETAILS',
-//                 payload: json.data
-//             })
-
-//         }catch (error) {
-//             console.log(error)
-//         }
-//     }
-// };
 
 export function getDetail(id) {
     return async function (dispatch) {

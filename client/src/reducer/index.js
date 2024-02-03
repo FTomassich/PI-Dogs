@@ -133,24 +133,6 @@
                     }
 
 
-                    // case 'ORDER_BY_WEIGHT':
-                    //     const dogsToSortByWeight = state.dogs.length > 0 ? state.dogs : state.allDogs;
-                    
-                    //     const sortedDogsByWeight = dogsToSortByWeight.slice().sort((a, b) => {
-                    //         // Extraer los valores numéricos de la cadena de peso
-                    //         const extractWeight = (dog) => {
-                    //             const [min, max] = dog.weight.split('-').map(Number);
-                    //             return (min + max) / 2; // Puedes ajustar esto para elegir cómo comparar los pesos
-                    //         };
-                    
-                    //         // Comparar los pesos
-                    //         return extractWeight(a) - extractWeight(b);
-                    //     });
-                    
-                    //     return {
-                    //         ...state,
-                    //         dogs: sortedDogsByWeight,
-                    //     };
                     case 'ORDER_BY_WEIGHT':
   const dogsToSortByWeight = state.dogs.length > 0 ? state.dogs : state.allDogs;
 
@@ -176,7 +158,7 @@
   case 'RESET_DETAIL':
   return {
     ...state,
-    detail: [], // Restablece el estado del detalle a un array vacío
+    detail: [], 
   };
 
                default:

@@ -14,9 +14,8 @@ const Detail = (props) => {
   useEffect(() => {
     dispatch(getDetail(id));
     return () => {
-      // Realiza acciones de limpieza aquí, si es necesario
-      // Por ejemplo, podrías enviar una acción para restablecer el estado de detalle
-      dispatch(resetDetail());
+      
+      dispatch(resetDetail()); //clean Detail
     };
   }, [dispatch, id ]);
 

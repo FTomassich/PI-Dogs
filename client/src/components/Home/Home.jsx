@@ -12,7 +12,7 @@ import SearchBar from '../SearchBar/SearchBar';
 
 
 const Home = () => {
-    //Creo 2 constantes, una para despachar acciones de redux y otra para usar el estado con los perros
+    
     const dispatch=useDispatch()
     const allDogs= useSelector((state) => state.dogs) //me traigo el estado del reducer
     const allTemps=useSelector((state)=>state.temperaments);
@@ -25,14 +25,22 @@ const indexOfLastDog = currentPage * dogsPerPage //8
 const indexOfFirstDog = indexOfLastDog - dogsPerPage//0
 const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog) //esta constante tiene los perros de la página actual
 
+
+
 const paginado = (pageNumber) => {
     setCurrentPage(pageNumber)
 }
 
     useEffect(()=>{
+
+      if (allDogs.length === 0) {
+      
         dispatch (getDogs());
         dispatch (getTemps());
-    },[]);
+    }
+    
+    
+  }, [dispatch]);
 
     //Handler de botón refreshDogs 
     function handleClick(e){
@@ -46,13 +54,16 @@ const paginado = (pageNumber) => {
     function handleFilterTemps(e) {
         const selectedTemperament = e.target.value;
         dispatch(filterByTemps(selectedTemperament));
+        setCurrentPage(1);
       }
 
 
     //Handler del select para filtrar según orígen
     function handleFilterOrigin(e){
         dispatch(filterOrigin(e.target.value)) //Le paso a la función lo que viene del select ( eso es el: e.target.value)
-    }
+        setCurrentPage(1);
+    
+      }
 
     function handleSort(e){
         e.preventDefault();
@@ -75,9 +86,7 @@ const paginado = (pageNumber) => {
     
     <div className={style.containerHome}> 
     <div className={style.containerbutton}>
-    {/* <div className={style.containerSearchBar}>
-        <SearchBar></SearchBar>
-    </div> */}
+    
      
     <button className={style.button2}><Link to= '/dogs'>➕ Create Dog</Link>  </button>
 

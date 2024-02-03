@@ -6,7 +6,7 @@ const Card = ({id,image,name,temperament,weight}) => {
   return (
 
 <div className={style.card}>
- {/* Envuelve solo el nombre del perro con Link */}
+ 
  <h2 className={style.itemName}>
         <Link to={`/detail/${id}`} className={style.itemName}>
           {name}
@@ -18,7 +18,7 @@ const Card = ({id,image,name,temperament,weight}) => {
 
 <div className={style.itemContainer}>
 <h2 className={style.itemCard}>Temperament: {temperament}</h2>
-<h2 className={style.itemCard}>Weight: {weight}</h2>
+<h2 className={style.itemWeight}>Weight: {weight}</h2>
 
 
 </div>
