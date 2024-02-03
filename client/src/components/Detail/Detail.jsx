@@ -34,13 +34,13 @@ const Detail = (props) => {
 
           <div className={style.itemContainer}>
             <h2 className={style.itemCard}>Temperament: {myDog[0].temperament}</h2>
-            <h2 className={style.itemCard}>Weight: {myDog[0].weight}</h2>
-            <h2 className={style.itemCard}>Height: {myDog[0].height}</h2>
-            <h2 className={style.itemCard}>Life_Span: {myDog[0].life_span}</h2>
+            <h2 className={style.itemWeight}>Weight (kg): {myDog[0].weight}</h2>
+            <h2 className={style.itemWeight}>Height (cm): {myDog[0].height}</h2>
+            <h2 className={style.itemWeight}>Life_Span: {myDog[0].life_span}</h2>
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>💫Loading...</p>
       )}
 
     </div>
