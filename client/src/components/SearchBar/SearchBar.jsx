@@ -3,6 +3,7 @@ import {useState} from 'react';
 import {useDispatch} from "react-redux";
 import { searchByName } from '../../actions';
 
+
 const SearchBar = () => {
     const dispatch= useDispatch()
     const [name, setName]= useState("");
@@ -18,6 +19,7 @@ const SearchBar = () => {
 function handleNameSubmit(e){
     e.preventDefault()
     dispatch(searchByName(name))
+    
 }
 
 
