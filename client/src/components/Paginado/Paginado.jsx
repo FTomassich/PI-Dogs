@@ -26,7 +26,7 @@ const Paginado = ({paginado, dogsPerPage, allDogs, currentPage}) => {
           )}
           {pageNumbers.map((number) => (
             <li key={number} className={number === currentPage ? style.active : style.number}>
-              <button className= {style.number}onClick={() => paginado(number)}>{number}</button>
+              <button className= {style.number} onClick={() => paginado(number)}>{number}</button>
             </li>
           ))}
           {currentPage < totalPages && (
