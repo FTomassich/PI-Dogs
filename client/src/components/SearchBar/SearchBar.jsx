@@ -26,7 +26,7 @@ function handleNameSubmit(e){
   return (
     <div>
         <input type="text"
-        placeholder='"Search dog...🔍' 
+        placeholder='"Search dogs...🔍' 
         onChange= {(e) => handleInputChange(e)}/>
 <button type = 'submit' onClick={(e)=> handleNameSubmit(e)}>Search🐱‍👤</button>
     </div>
