@@ -78,7 +78,12 @@ justify-content: space-between;
    justify-items: center;
   
      }
-   
+  .containerSelect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
    }
 
    .containerSelect{
