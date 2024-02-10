@@ -94,7 +94,7 @@ justify-content: space-between;
     height: 20vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; 
+    /* flex-direction: row;  */
     justify-content:space-around;
     
     /* align-items:center; */
