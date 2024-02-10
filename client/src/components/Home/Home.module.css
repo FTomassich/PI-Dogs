@@ -32,6 +32,14 @@
       
    }
 
+
+   .containerSearchBar {
+    display: flex;
+    width: 20vw;
+    height: 10 vh;
+   }
+
+
    @media (max-width:1140px){
     .containerCards {
        display: grid;
