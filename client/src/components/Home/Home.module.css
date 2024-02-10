@@ -89,14 +89,14 @@ justify-content: space-between;
     border: solid;
     border-radius: 10px;
     border-width: 1px;
-    box-shadow: #000000e1 0 5px 15px;
-    width: 70vw;
-    height: 20vh;
-    background-color: black;
+    box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
+    width: 75vw;
+    height: auto;
+   
     /* display: grid; */
     /* grid-template-columns: 1 fr; */
     flex-wrap: wrap;
-    flex-direction: row; 
+    /* flex-direction: row;  */
     justify-content:space-around;
     display: flex;
     align-items:center;
