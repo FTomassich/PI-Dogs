@@ -92,12 +92,14 @@ justify-content: space-between;
     box-shadow: #000000e1 0 5px 15px;
     width: 70vw;
     height: 20vh;
-    display: flex;
+    background-color: black;
+    /* display: grid; */
+    /* grid-template-columns: 1 fr; */
     flex-wrap: wrap;
-    /* flex-direction: row;  */
+    flex-direction: row; 
     justify-content:space-around;
-    
-    /* align-items:center; */
+    display: flex;
+    align-items:center;
     
     /* flex-direction: column;
     justify-content: center;
