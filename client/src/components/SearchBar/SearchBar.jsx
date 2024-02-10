@@ -24,7 +24,7 @@ function handleNameSubmit(e){
 
 
   return (
-    <div className={style.searchbar}>
+    <div >
         <input type="text"
         placeholder='"Search dogs...🔍' 
         onChange= {(e) => handleInputChange(e)}/>
