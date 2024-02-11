@@ -102,6 +102,7 @@ padding: auto; */
        grid-template-columns: 1fr; 
        place-items: center;
 justify-content: space-between;
+align-items: center;
 
    align-content: center;
    justify-items: center;
