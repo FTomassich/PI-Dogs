@@ -116,5 +116,19 @@ margin-top: 10px;
     .card {
         width: 84vw;
     }
+
+    .itemName{
+        width: 74vw;
+    }
+    .itemContainer{
+        width: 74vw;
+    }
+
+    .image {
+        width: 74vw;
+    }
+    .itemCard {
+        width: 74vw;
+    }
    }
    
