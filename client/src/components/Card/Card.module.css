@@ -114,29 +114,35 @@ margin-top: 10px;
    @media (max-width: 768px) {
 
     .card {
+        display: flex; 
         width: 84vw;
         place-items: center;
-      justify-content: space-around;
+      justify-content: center;
       
           align-content: center;
           justify-items: center;
     }
 
     .itemName{
+        display: flex;
         width: 74vw;
     }
     .itemContainer{
+        display: flex;
         width: 74vw;
     }
 
     .image {
+        display: flex;
         width: 74vw;
     }
     .itemCard {
+        display: flex;
         width: 74vw;
     }
 
     .itemWeight{
+        display: flex;
         width: 74vw;
     }
    }
