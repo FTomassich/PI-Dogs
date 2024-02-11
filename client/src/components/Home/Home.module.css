@@ -95,36 +95,10 @@ padding: auto; */
 
   
 
-
-   @media (max-width:1140px){
-    .containerCards {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       width: 65 vw;
-       place-items: center;
-       justify-content: space-between;
-       
-           align-content: center;
-           justify-items: center;
-          
-   }
-   .containerSelect {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    width: auto;
-    place-items: center;
-    justify-content: space-between;
-    
-        align-content: center;
-        justify-items: center;
-       
-}
-    }
-
    @media (max-width: 768px) {
      .containerCards {  
-       grid-template-columns:  1fr; 
+      display: grid;
+       grid-template-columns: 1fr; 
        place-items: center;
 justify-content: space-between;
 
@@ -133,57 +107,37 @@ justify-content: space-between;
   
      }
 
-     .containerSelect {
+     .containerAllSelect {
       display: flex;
       /* flex-direction: row; */
       flex-direction: column;
-      width: 100vw;
+      width: 70vw;
+      height: 35vh;
       place-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       
           align-content: center;
           justify-items: center;
          
   }
 
-  .select {
-    display: flex;
-    flex-direction: column;
-  }
-   }
-   
-     /* Otra media query si es necesario */
-     @media (max-width: 480px) {
-       .containerCards {
-           grid-template-columns: 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
-          width: 50 vw;
-          place-items: center;
-justify-content: space-between;
-
-   align-content: center;
-   justify-items: center;
-  
-     }
-  .containerSelect {
+  .container {
     width: 60vw;
-    height: auto;
-   
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* flex-wrap: wrap; */
-    flex-direction: row; 
-    justify-content: space-between;
+    height: 30vh;
         display: flex;
-    align-items:center;
-  }
+        justify-content: space-around;
+    
+       
+       }
+
   .select {
-    width: auto;
     display: flex;
     flex-direction: column;
+  
   }
-
-
    }
+   
+     
 
   
    
