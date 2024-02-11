@@ -54,8 +54,8 @@
     /* grid-template-columns: 1fr; */
     /* flex-wrap: wrap; */
     flex-direction: row; 
-    justify-content: row;
-    display: flex;
+    justify-content: space-between;
+        display: flex;
     align-items:center;
     
     /* flex-direction: column;
@@ -128,33 +128,26 @@ justify-content: space-between;
      @media (max-width: 480px) {
        .containerCards {
            grid-template-columns: 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
-          width: 30 vw;
+          width: 40 vw;
           place-items: center;
 justify-content: space-between;
 
    align-content: center;
    justify-items: center;
-   justify-content: space-between;
   
      }
-     .containerSelect {
-      display: flex;
-      flex-direction: row;
-      /* flex-direction: column; */
-      width: 70vw;
-      place-items: center;
-      justify-content: space-between;
-      
-          align-content: center;
-          justify-items: center;
-         
-  }
-
-  .select {
-    display: flex;
-    flex-direction: column;
-  }
+  .containerSelect {
+    width: 60vw;
+    height: auto;
    
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* flex-wrap: wrap; */
+    flex-direction: row; 
+    justify-content: space-between;
+        display: flex;
+    align-items:center;
+  }
 
 
    }
