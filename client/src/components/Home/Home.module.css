@@ -122,7 +122,7 @@ justify-content: space-between;
      /* Otra media query si es necesario */
      @media (max-width: 480px) {
        .containerCards {
-           grid-template-columns: 1fr 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
+           grid-template-columns: 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
           width: 50 vw;
           place-items: center;
 justify-content: space-between;
