@@ -102,9 +102,9 @@ const paginado = (pageNumber) => {
 
     
     
-    <div className={style.containerSelect}>
+    <div className={style.containerAllSelect}>
 
-<div>
+<div className={style.container}>
     <div className={style.select}>
     
         <h3 className={style.h3}>Origin filter</h3>
@@ -127,7 +127,7 @@ const paginado = (pageNumber) => {
         </div>
 
         </div>
-<div>
+<div className={style.container}>
         <div className={style.select}>
         <h3 className={style.h3}>Order by weight</h3>
             <select onChange={e=>handleOrderByWeight(e)}>
@@ -152,6 +152,7 @@ const paginado = (pageNumber) => {
 
         
     </div>
+
     <div className= {style.containerCards}>
 
         {currentDogs && currentDogs.map((el)=>(

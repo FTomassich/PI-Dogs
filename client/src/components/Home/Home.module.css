@@ -38,7 +38,8 @@
     width: 20vw;
     height: 10 vh;
    }
-.containerSelect{
+
+.containerAllSelect{
     
     background-color: transparent;
     backdrop-filter: blur(4px);
@@ -48,21 +49,48 @@
     border-width: 1px;
     box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
     width: 80vw;
-    height: auto;
+    height: 20vh;
    
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /* flex-wrap: wrap; */
-    flex-direction: row; 
-    justify-content: space-between;
+    /* flex-direction: row;  */
+    /* justify-content: space-between; */
         display: flex;
+        
     align-items:center;
     
-    /* flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     
     place-items: center;
-    justify-items: center; */
+    justify-items: center;
+   }
+
+   .container {
+width: 40vw;
+height: 30vh;
+    display: flex;
+    justify-content: space-around;
+
+   
+   }
+
+   .select {
+    font-family: 'Open Sans', sans-serif; /* Intentará usar Open Sans, y si no está disponible, usará una fuente sans-serif genérica */
+  font-size: 14px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  line-height: 1.6; /* Ajusta la altura de línea según tus preferencias */
+  color: black; /* Ajusta el color del texto según tus preferencias */
+
+  /* Otros estilos CSS que desees aplicar */
+    display: flex;
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+/* margin: 10px;
+padding: auto; */
    }
 
   
@@ -107,8 +135,8 @@ justify-content: space-between;
 
      .containerSelect {
       display: flex;
-      flex-direction: row;
-      /* flex-direction: column; */
+      /* flex-direction: row; */
+      flex-direction: column;
       width: 100vw;
       place-items: center;
       justify-content: space-between;
@@ -160,22 +188,7 @@ justify-content: space-between;
   
    
 
-   .select {
-    font-family: 'Open Sans', sans-serif; /* Intentará usar Open Sans, y si no está disponible, usará una fuente sans-serif genérica */
-  font-size: 14px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  line-height: 1.6; /* Ajusta la altura de línea según tus preferencias */
-  color: black; /* Ajusta el color del texto según tus preferencias */
-
-  /* Otros estilos CSS que desees aplicar */
-    display: flex;
-   flex-direction: column;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-/* margin: 10px;
-padding: auto; */
-   }
+  
 
 
    
