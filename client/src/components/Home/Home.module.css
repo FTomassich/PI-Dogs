@@ -54,7 +54,7 @@
     /* grid-template-columns: 1fr; */
     /* flex-wrap: wrap; */
     flex-direction: row; 
-    justify-content:space-around;
+    justify-content: row;
     display: flex;
     align-items:center;
     
@@ -117,6 +117,11 @@ justify-content: space-between;
           justify-items: center;
          
   }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
    }
    
      /* Otra media query si es necesario */
@@ -151,7 +156,7 @@ justify-content: space-between;
 
   /* Otros estilos CSS que desees aplicar */
     display: flex;
-   flex-direction: row;
+   flex-direction: column;
    display: flex;
    justify-content: center;
    align-items: center;
