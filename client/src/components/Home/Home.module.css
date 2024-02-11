@@ -109,7 +109,7 @@ justify-content: space-between;
       display: flex;
       flex-direction: row;
       /* flex-direction: column; */
-      width: 70vw;
+      width: 100vw;
       place-items: center;
       justify-content: space-between;
       
