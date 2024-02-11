@@ -97,7 +97,7 @@ padding: auto; */
 
    @media (max-width: 768px) {
      .containerCards {  
-        width: 85vw;
+        width: 100vw;
       display: grid;
        grid-template-columns: 1fr; 
        place-items: center;
