@@ -97,6 +97,7 @@ padding: auto; */
 
    @media (max-width: 768px) {
      .containerCards {  
+        width: 60vw;
       display: grid;
        grid-template-columns: 1fr; 
        place-items: center;
@@ -111,7 +112,7 @@ justify-content: space-between;
       display: flex;
       /* flex-direction: row; */
       flex-direction: column;
-      width: 70vw;
+      width: 90vw;
       height: 35vh;
       place-items: center;
       justify-content: space-around;
