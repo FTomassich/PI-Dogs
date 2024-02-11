@@ -137,13 +137,24 @@ justify-content: space-between;
    justify-content: space-between;
   
      }
-  .containerSelect {
-   
-    display: flex;
-    flex-direction: row;
-    width: 50 vw;
-
+     .containerSelect {
+      display: flex;
+      flex-direction: row;
+      /* flex-direction: column; */
+      width: 70vw;
+      place-items: center;
+      justify-content: space-between;
+      
+          align-content: center;
+          justify-items: center;
+         
   }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
+   
 
 
    }
