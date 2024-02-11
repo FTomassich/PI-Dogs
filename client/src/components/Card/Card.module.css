@@ -114,7 +114,7 @@ margin-top: 10px;
    @media (max-width: 768px) {
 
     .card {
-        width: 84vw;
+        width: 83vw;
     }
 
     .itemName{
@@ -128,6 +128,10 @@ margin-top: 10px;
         width: 74vw;
     }
     .itemCard {
+        width: 74vw;
+    }
+
+    .itemWeight{
         width: 74vw;
     }
    }
