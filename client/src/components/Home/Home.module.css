@@ -38,55 +38,7 @@
     width: 20vw;
     height: 10 vh;
    }
-
-
-   @media (max-width:1140px){
-    .containerCards {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       width: auto;
-       place-items: center;
-       justify-content: space-between;
-       
-           align-content: center;
-           justify-items: center;
-          
-   }
-    }
-
-   @media (max-width: 768px) {
-     .containerCards {  
-       grid-template-columns: 1fr; 
-       place-items: center;
-justify-content: space-between;
-
-   align-content: center;
-   justify-items: center;
-  
-     }
-   }
-   
-     /* Otra media query si es necesario */
-     @media (max-width: 480px) {
-       .containerCards {
-           grid-template-columns: 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
-          width: auto;
-          place-items: center;
-justify-content: space-between;
-
-   align-content: center;
-   justify-items: center;
-  
-     }
-  .containerSelect {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-
-   }
-
-   .containerSelect{
+.containerSelect{
     
     background-color: transparent;
     backdrop-filter: blur(4px);
@@ -95,13 +47,13 @@ justify-content: space-between;
     border-radius: 10px;
     border-width: 1px;
     box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
-    width: 75vw;
+    width: 80vw;
     height: auto;
    
     /* display: grid; */
-    /* grid-template-columns: 1 fr; */
-    flex-wrap: wrap;
-    /* flex-direction: row;  */
+    /* grid-template-columns: 1fr; */
+    /* flex-wrap: wrap; */
+    flex-direction: row; 
     justify-content:space-around;
     display: flex;
     align-items:center;
@@ -113,19 +65,83 @@ justify-content: space-between;
     justify-items: center; */
    }
 
+  
+
+
    @media (max-width:1140px){
-    .containerSelect {
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-       width: auto;
+    .containerCards {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       width: 65 vw;
        place-items: center;
        justify-content: space-between;
        
            align-content: center;
            justify-items: center;
           
-   }}
+   }
+   .containerSelect {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: auto;
+    place-items: center;
+    justify-content: space-between;
+    
+        align-content: center;
+        justify-items: center;
+       
+}
+    }
+
+   @media (max-width: 768px) {
+     .containerCards {  
+       grid-template-columns:  1fr; 
+       place-items: center;
+justify-content: space-between;
+
+   align-content: center;
+   justify-items: center;
+  
+     }
+
+     .containerSelect {
+      display: flex;
+      flex-direction: row;
+      /* flex-direction: column; */
+      width: auto;
+      place-items: center;
+      justify-content: space-between;
+      
+          align-content: center;
+          justify-items: center;
+         
+  }
+   }
+   
+     /* Otra media query si es necesario */
+     @media (max-width: 480px) {
+       .containerCards {
+           grid-template-columns: 1fr 1fr; /* Cambias a una sola columna en pantallas aún más pequeñas */
+          width: 50 vw;
+          place-items: center;
+justify-content: space-between;
+
+   align-content: center;
+   justify-items: center;
+  
+     }
+  .containerSelect {
+   
+    display: flex;
+    flex-direction: row;
+  }
+
+
+   }
+
+  
+   
 
    .select {
     font-family: 'Open Sans', sans-serif; /* Intentará usar Open Sans, y si no está disponible, usará una fuente sans-serif genérica */
@@ -135,11 +151,11 @@ justify-content: space-between;
 
   /* Otros estilos CSS que desees aplicar */
     display: flex;
-   flex-direction:column;
+   flex-direction: row;
    display: flex;
    justify-content: center;
    align-items: center;
-  
+
 /* margin: 10px;
 padding: auto; */
    }

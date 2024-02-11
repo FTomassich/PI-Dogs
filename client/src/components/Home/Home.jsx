@@ -104,7 +104,7 @@ const paginado = (pageNumber) => {
     
     <div className={style.containerSelect}>
 
-
+<div>
     <div className={style.select}>
     
         <h3 className={style.h3}>Origin filter</h3>
@@ -126,6 +126,8 @@ const paginado = (pageNumber) => {
         </select>
         </div>
 
+        </div>
+<div>
         <div className={style.select}>
         <h3 className={style.h3}>Order by weight</h3>
             <select onChange={e=>handleOrderByWeight(e)}>
@@ -145,6 +147,7 @@ const paginado = (pageNumber) => {
   ))}
 </select>
 
+            </div>
             </div>
 
         
