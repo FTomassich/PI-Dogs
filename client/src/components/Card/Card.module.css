@@ -111,7 +111,7 @@ margin-top: 10px;
     font-size: 14px; 
    }
 
-   @media (max-width: 768px) {
+   @media (max-width: 468px) {
 
     .card {
         display: flex; 
