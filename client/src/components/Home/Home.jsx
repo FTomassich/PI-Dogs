@@ -107,11 +107,11 @@ const Home = () => {
 
         <div className={style.group}>
 
-          <div className={style.containerTxt}>
+          <div className={style.section}>
             <h3 className={style.h3}>Origin filter</h3>
           </div>
 
-          <div className={style.containerTxt}>
+          <div className={style.section}>
             <select
               className={style.select}
               onChange={e => handleFilterOrigin(e)}>
@@ -124,10 +124,10 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.containerTxt}>
+          <div className={style.section}>
           <h3 className={style.h3}>Alfabetic order</h3>
           </div>
-          <div className={style.containerTxt}>
+          <div className={style.section}>
           <select
             className={style.select}
             onChange={e => handleSort(e)}>
@@ -141,10 +141,10 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.containerTxt}>
+          <div className={style.section}>
           <h3 className={style.h3}>Order by weight</h3>
           </div>
-          <div className={style.containerTxt}>
+          <div className={style.section}>
           <select
             className={style.select}
             onChange={e => handleOrderByWeight(e)}>
@@ -156,10 +156,10 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.containerTxt}>
+          <div className={style.section}>
             <h3 className={style.h3}>Temps filter</h3>
             </div>
-            <div className={style.containerTxt}>
+            <div className={style.section}>
           <select
             className={style.select}
             onChange={(e) => handleFilterTemps(e)}>
