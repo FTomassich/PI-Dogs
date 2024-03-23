@@ -20,8 +20,8 @@ const Home = () => {
   const [orden, setOrden] = useState('')
   //Estados locales del paginado
   const [currentPage, setCurrentPage] = useState(1)//mi página actual que arranca en 1
-  const [dogsPerPage, setDogsPerPage] = useState(8)//dogs per page (8)
-  const indexOfLastDog = currentPage * dogsPerPage //8
+  const [dogsPerPage, setDogsPerPage] = useState(9)
+  const indexOfLastDog = currentPage * dogsPerPage //9
   const indexOfFirstDog = indexOfLastDog - dogsPerPage//0
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog) //esta constante tiene los perros de la página actual
 

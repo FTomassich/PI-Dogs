@@ -1,34 +1,34 @@
 .containerHome {
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: space-around;
-   gap: 30px;
-    align-items: center;
-    place-items: center;
+    gap: 40px;
+    margin-top: 30px;
    
+
+
 }
 
 .containerCards {
-   
-    width: 1000px;
-    display: flex;
-    flex-flow: row wrap;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-justify-content: space-between;
-   
-    place-items: center;
-    
-    align-content: center;  
-}
-
-.containerSearchBar {
-    display: flex;
+    background-color: rgba(231, 183, 51, 0.753);
     width: 100%;
-    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+   
+    border: solid 2px;
+    border-radius: 5px;
+    box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
+}
+@media (max-width: 768px) {
+    .containerCards {
+        grid-template-columns: 1fr;
+    }
 }
 
 .containerAllSelect {
@@ -59,10 +59,10 @@ justify-content: space-between;
     width: 200px;
     height: 70px;
     background-color: rgba(128, 128, 128, 0.322);
-    
+
 }
 
-.section{
+.section {
     display: flex;
     width: 100%;
     height: 30px;
@@ -71,23 +71,26 @@ justify-content: space-between;
     align-content: center;
 }
 
-.h3{
+.h3 {
     width: 80%;
-   
+
 }
 
 .select {
-    width: 150px; 
+    width: 150px;
 }
 
 .containerbutton {
-    background-color: transparent;
+    background-color: rgba(224, 184, 108, 0.781);
+    box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
     display: flex;
-    width: 80vw;
-    height: 20vh;
+    width: 1100px;
+    height: 80px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border: solid 2px;
+    border-radius: 5px;
 }
 
 .button {
@@ -95,10 +98,12 @@ justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 15px;
+
     &:hover {
         transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
     }
+
     height: 6vh;
     width: 12vw;
     background-color: green;
@@ -110,16 +115,19 @@ justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 15px;
+
     a {
         display: block;
         text-decoration: none;
         color: white;
     }
+
     &:hover {
 
         transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
     }
+
     height: 6vh;
     width: 12vw;
     background-color: rgb(194, 4, 4);
