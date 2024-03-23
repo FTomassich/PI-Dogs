@@ -4,8 +4,9 @@
     width: auto;
     height: 100%;
     flex-direction: column;
+    gap:30px;
     
-    /* align-items: center; */
+    align-items: center;
    
 }
 
