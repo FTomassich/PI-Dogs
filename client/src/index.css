@@ -3,11 +3,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  /* place-items: center; */
+ 
   justify-content: center;
   min-width: 320px;
   
-  background-color: blueviolet;
+  
   
   min-height: 100vh;
   /* background-image: url("../src/wallpapers/dog.jpg") ; */
