@@ -1,19 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@800&display=swap');
+
 .containerHome {
     display: flex;
     width: auto;
     height: 100%;
     flex-direction: column;
     align-items: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin:10px;
+    gap:25px;
    
 }
 .containerAllSelect {
-    background-color: rgba(17, 17, 20, 0.685);
+    background-color:  rgb(216, 89, 15);;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 10px;
-    margin-bottom: 20px;
+   
+    /* margin-top: 10px;
+    margin-bottom: 20px; */
+    /* place-items: center; */
+    place-content: center;
     width:100%;
-    height:250px;
+    height:auto;
+    border-radius: 10px;
+    /* gap:10px */
+    box-shadow: #000000e1 0 5px 15px;
+    
     
 }
 
@@ -23,7 +38,7 @@
 grid-template-columns: 1fr;
     width: auto;
     height: 80px;
-    margin:20px;
+    margin:30px;
     border: solid;
     border-radius: 5px;
     
@@ -32,14 +47,16 @@ grid-template-columns: 1fr;
 
 
 .containerCards {
-    background-color: rgba(231, 183, 51, 0.753);
+    background-color: rgba(230, 133, 42, 0.596);
     width:100%;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr;  
+    border-radius: 10px; 
+    box-shadow: #000000e1 0 5px 15px;
     
    
-    box-shadow: hsla(0, 0%, 0%, 0.882) 0 5px 15px;
+    
 }
 
 
@@ -81,12 +98,19 @@ background-color: antiquewhite;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(27, 27, 27, 0.719);
+    border-radius: 10px;
+    box-shadow: #000000e1 0 5px 15px;
+
+   
    
 }
 
 .button {
     border-radius: 0.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     font-size: 15px;
 

@@ -3,8 +3,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
- 
-  justify-content: center;
+ place-items: center;
+  /* justify-content: center; */
   min-width: 320px;
   
   
