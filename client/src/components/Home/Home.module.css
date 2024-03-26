@@ -10,7 +10,7 @@
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: bold;
-    margin:10px;
+    /* margin:10px; */
     gap:25px;
    
 }
@@ -18,15 +18,10 @@
     background-color:  rgb(216, 89, 15);;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   
-    /* margin-top: 10px;
-    margin-bottom: 20px; */
-    /* place-items: center; */
     place-content: center;
     width:100%;
     height:auto;
     border-radius: 10px;
-    /* gap:10px */
     box-shadow: #000000e1 0 5px 15px;
     
     
