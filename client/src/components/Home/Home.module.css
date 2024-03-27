@@ -29,7 +29,7 @@
 }
 
 .group {
-    background-color: rgba(3, 145, 133, 0.616);
+    background-color: rgba(173, 216, 230, 0.774);
     display: grid;
 grid-template-columns: 1fr;
     width: 180px;

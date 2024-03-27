@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
-import {useDispatch} from "react-redux";
+import {useDispatch} from 'react-redux';
 import { searchByName } from '../../actions';
 import style from '../SearchBar/searchbar.module.css'
 
@@ -30,7 +30,7 @@ const SearchBar = () => {
         <input 
         className={style.input}
         type="text"
-        placeholder='"Search dogs...🔍' 
+        placeholder='Search beerd dogs by name...🔍' 
         onChange= {(e) => handleInputChange(e)}
         onKeyPress={handleKeyPress}
         />
