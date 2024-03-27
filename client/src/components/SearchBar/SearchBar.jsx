@@ -17,8 +17,8 @@ const SearchBar = () => {
     
     }
     
-    const handleKeyPress = (e) => {
-      if (e.key === 'Enter') {
+    const handleKeyDown = (e) => {
+      if (e.keyCode === 13) {
           e.preventDefault();
           dispatch(searchByName(name));
       }
@@ -32,7 +32,7 @@ const SearchBar = () => {
         type="text"
         placeholder='Search beerd dogs by name...🔍' 
         onChange= {(e) => handleInputChange(e)}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyDown}
         />
 
     </div>
