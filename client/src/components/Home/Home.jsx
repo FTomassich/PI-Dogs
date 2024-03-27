@@ -91,9 +91,9 @@ const Home = () => {
         <button className={style.button2}><Link to='/dogs'>➕ Create Dog</Link>  </button>
 
 
-        <div className={style.containerSearchBar}>
-          <SearchBar></SearchBar>
-        </div>
+        
+          <SearchBar ></SearchBar>
+        
 
 
         <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs🐶</button>

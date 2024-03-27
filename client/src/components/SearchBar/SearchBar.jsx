@@ -2,8 +2,7 @@ import React from 'react'
 import {useState} from 'react';
 import {useDispatch} from "react-redux";
 import { searchByName } from '../../actions';
-
-
+import style from '../SearchBar/searchbar.module.css'
 const SearchBar = () => {
     const dispatch= useDispatch()
     const [name, setName]= useState("");
@@ -24,8 +23,10 @@ function handleNameSubmit(e){
 
 
   return (
-    <div >
-        <input type="text"
+    <div className={style.container}>
+        <input 
+        className={style.searchBar}
+        type="text"
         placeholder='"Search dogs...🔍' 
         onChange= {(e) => handleInputChange(e)}/>
 <button type = 'submit' onClick={(e)=> handleNameSubmit(e)}>Search🐱‍👤</button>
