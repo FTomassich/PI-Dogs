@@ -18,24 +18,26 @@
 .containerAllSelect {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    place-content: center;
+    place-items: center;
     width:100%;
     height:auto;
-    margin:20px;
-    background-color: azure;
+    margin-top:150px;
+    /* background-color: rgba(255, 255, 198, 0.774); */
+    margin-bottom: 30px;
     
     
 }
 
 .group {
-  background-color: bisque;
+    background-color: rgba(230, 133, 42, 0.596);
     display: grid;
 grid-template-columns: 1fr;
-    width: auto;
+    width: 180px;
     height: 80px;
     margin:10px;
-    border: solid;
-    border-radius: 5px;
+     /* border: solid; */
+    border-radius: 5px; 
+    place-content: center;
     
    
 }
@@ -48,7 +50,7 @@ grid-template-columns: 1fr;
     justify-content: space-around;
     align-items: center;
     background-color: azure;
-    
+    position: fixed;
     box-shadow: #000000e1 0 2px 8px;
 
 
@@ -58,7 +60,7 @@ grid-template-columns: 1fr;
 
 
 .containerCards {
-    background-color: rgba(230, 133, 42, 0.596);
+    
     width:100%;
     display: grid;
     place-items: center;
@@ -84,12 +86,13 @@ grid-template-columns: 1fr;
 }
 
 .h3 {
-    width: 150px;
-background-color: antiquewhite;
+    width: 100%;
+    height: 7px;
+
 }
 
 .select {
-    width:150px;
+    width:130px;
 }
 
 
