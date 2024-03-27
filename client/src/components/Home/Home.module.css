@@ -152,7 +152,7 @@ grid-template-columns: 1fr;
     }
 
     height: 40px;
-    width: 150px;
+    width: auto;
     background-color: transparent;
 }
 
@@ -179,7 +179,7 @@ grid-template-columns: 1fr;
     }
 
     height: 40px;
-    width: 150px;
+    width: auto;
     background-color: transparent;
     cursor: pointer;
     a {
@@ -213,7 +213,7 @@ grid-template-columns: 1fr;
         }
     
         height: 40px;
-        width: 150px;
+        width: auto;
         background-color: transparent;
         cursor: pointer;
         a {
