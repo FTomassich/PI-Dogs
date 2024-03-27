@@ -17,9 +17,9 @@ const SearchBar = () => {
     
     }
     
-    const handleKeyDown = (e) => {
-      if (e.keyCode === 13) {
-          e.preventDefault();
+    const handleKeyDown = (event) => {
+      if (event.key === "Enter") {
+          event.preventDefault();
           dispatch(searchByName(name));
       }
   };
