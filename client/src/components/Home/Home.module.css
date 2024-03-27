@@ -29,7 +29,7 @@
 }
 
 .group {
-    background-color: rgba(230, 133, 42, 0.596);
+    background-color: rgba(3, 145, 133, 0.616);
     display: grid;
 grid-template-columns: 1fr;
     width: 180px;
@@ -45,15 +45,16 @@ grid-template-columns: 1fr;
 
 .containerbutton {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr;
     width: 100%;
     height: 100px;
     place-items: center;
-    justify-content: space-around;
+    gap:10px;
+    /* justify-content: space-around; */
     align-items: center;
     background-color: azure;
     position: fixed;
-    box-shadow: #000000e1 0 2px 8px;
+    box-shadow: #000000a2 0 1px 5px;
 
 
    
@@ -115,6 +116,10 @@ grid-template-columns: 1fr;
 
 
 .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border-radius: 0.5rem;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -127,9 +132,9 @@ grid-template-columns: 1fr;
         transition: transform 0.3s ease-in-out;
     }
 
-    height: 6vh;
-    width: 12vw;
-    background-color: green;
+    height: 40px;
+    width: 150px;
+    background-color: rgba(25, 63, 114, 0.918);
 }
 
 .button2 {
@@ -168,10 +173,3 @@ grid-template-columns: 1fr;
     backdrop-filter: blur(4px);
 }
 
-.searchBar{
-    display: flex;
-    flex-direction: row;
-    width:100px;
-    height:20px;;
-    background-color: yellow;
-}

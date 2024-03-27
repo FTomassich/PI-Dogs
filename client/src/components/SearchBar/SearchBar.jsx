@@ -3,6 +3,8 @@ import {useState} from 'react';
 import {useDispatch} from "react-redux";
 import { searchByName } from '../../actions';
 import style from '../SearchBar/searchbar.module.css'
+
+
 const SearchBar = () => {
     const dispatch= useDispatch()
     const [name, setName]= useState("");
@@ -15,11 +17,12 @@ const SearchBar = () => {
     
     }
     
-function handleNameSubmit(e){
-    e.preventDefault()
-    dispatch(searchByName(name))
-    
-}
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter') {
+          e.preventDefault();
+          dispatch(searchByName(name));
+      }
+  };
 
 
   return (
@@ -28,8 +31,10 @@ function handleNameSubmit(e){
         className={style.input}
         type="text"
         placeholder='"Search dogs...🔍' 
-        onChange= {(e) => handleInputChange(e)}/>
-<button type = 'submit' onClick={(e)=> handleNameSubmit(e)}>Search🐱‍👤</button>
+        onChange= {(e) => handleInputChange(e)}
+        onKeyPress={handleKeyPress}
+        />
+
     </div>
   )
 }
