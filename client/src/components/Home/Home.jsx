@@ -87,8 +87,9 @@ const Home = () => {
     <div className={style.containerHome}>
       <div className={style.containerbutton}>
           <div className={style.twobuttons}>
-          <button className={style.button2}><Link to='/dogs'>➕ Create Dog</Link>  </button>
-        <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs🐶</button>
+            <button className={style.button3}><Link to= '/'>Welcome</Link></button>
+          <button className={style.button2}><Link to='/dogs'> Create Dog</Link>  </button>
+        <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs</button>
         </div>
         <SearchBar ></SearchBar>
       </div>

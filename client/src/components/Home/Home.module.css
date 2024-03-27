@@ -128,55 +128,102 @@ grid-template-columns: 1fr;
 
 
 .button {
+    /* border-color: rgba(128, 128, 128, 0.774); */
+   
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
+    border:solid 1px;
+    border-color: lightblue;
     font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     cursor: pointer;
 
     &:hover {
         transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
+        text-decoration: underline; /* Subrayar el texto al pasar el cursor */
+            font-weight: bold; /* Poner en negrita el texto al pasar el cursor */
     }
 
     height: 40px;
     width: 150px;
-    background-color: rgba(25, 63, 114, 0.918);
+    background-color: transparent;
 }
 
 .button2 {
+    border: solid 1px;
+    border-color: lightpink;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
     font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
+    font-weight: 500;
+    font-style:normal;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     
 
     &:hover {
         transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
+        text-decoration: underline; /* Subrayar el texto al pasar el cursor */
+            font-weight: bold; /* Poner en negrita el texto al pasar el cursor */
     }
 
     height: 40px;
     width: 150px;
-    background-color: rgba(25, 63, 114, 0.918);
+    background-color: transparent;
     cursor: pointer;
     a {
         text-decoration: none; /* Quitar el subrayado del enlace */
         color: inherit; /* Heredar el color del texto del botón */
     }
 }
+
+
+.button3{
+    
+        border: solid 1px;
+        border-color: lightgreen;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 500;
+        font-style:normal;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        
+    
+        &:hover {
+            transform: scale(1.04);
+            transition: transform 0.3s ease-in-out;
+            text-decoration: underline; /* Subrayar el texto al pasar el cursor */
+            font-weight: bold; /* Poner en negrita el texto al pasar el cursor */
+        }
+    
+        height: 40px;
+        width: 150px;
+        background-color: transparent;
+        cursor: pointer;
+        a {
+            text-decoration: none; /* Quitar el subrayado del enlace */
+            color: inherit; /* Heredar el color del texto del botón */
+       
+        }
+    }
+
+
 
 .containerSearchBar {
     width: 100%;
