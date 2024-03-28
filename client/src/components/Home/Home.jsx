@@ -99,7 +99,7 @@ const Home = () => {
       <div className={style.containerAllSelect}>
 
 
-        {/* <div className={style.group}>
+        <div className={style.group}>
 
           <div className={style.section}>
             <h3 className={style.h3}>Origin filter</h3>
@@ -166,16 +166,16 @@ const Home = () => {
           </div>
 
 
-        </div> */}
+        </div>
 
 
       </div>
 
       <div className={style.containerCards}>
 
-        {/* {currentDogs && currentDogs.map((el) => (
+        {currentDogs && currentDogs.map((el) => (
           <Card id={el.id} name={el.name} image={el.image} weight={el.weight} temperament={el.temperament} />
-        ))} */}
+        ))}
 
       </div>
 

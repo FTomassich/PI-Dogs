@@ -18,6 +18,7 @@ const Card = ({id,image,name,temperament,weight}) => {
 
 <div className={style.itemContainer}>
 <h2 className={style.itemCard}>Temperament: {temperament}</h2>
+<hr className={style.hr}/>
 <h2 className={style.itemWeight}>Weight: {weight}</h2>
 
 
