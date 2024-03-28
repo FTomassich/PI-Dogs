@@ -241,3 +241,6 @@ grid-template-columns: 1fr;
     backdrop-filter: blur(4px);
 }
 
+* {
+    box-sizing: border-box;
+  }
