@@ -19,6 +19,7 @@
 }
 
 .container{
+    overflow-x: hidden;
     position:relative;
     display: flex;
     flex-direction: row;
