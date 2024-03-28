@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@800&display=swap');
 
 .containerHome {
+    overflow-x: hidden;
+
     display: flex;
     width: auto;
     height: 100%;
