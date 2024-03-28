@@ -99,7 +99,7 @@ const Home = () => {
       <div className={style.containerAllSelect}>
 
 
-        <div className={style.group}>
+        {/* <div className={style.group}>
 
           <div className={style.section}>
             <h3 className={style.h3}>Origin filter</h3>
@@ -166,7 +166,7 @@ const Home = () => {
           </div>
 
 
-        </div>
+        </div> */}
 
 
       </div>
