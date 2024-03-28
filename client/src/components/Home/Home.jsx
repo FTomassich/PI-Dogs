@@ -173,9 +173,9 @@ const Home = () => {
 
       <div className={style.containerCards}>
 
-        {currentDogs && currentDogs.map((el) => (
+        {/* {currentDogs && currentDogs.map((el) => (
           <Card id={el.id} name={el.name} image={el.image} weight={el.weight} temperament={el.temperament} />
-        ))}
+        ))} */}
 
       </div>
 
