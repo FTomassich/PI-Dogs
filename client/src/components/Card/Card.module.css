@@ -87,6 +87,11 @@
 }
 
 .hr{
+    /* border: none; */
+    border: none;
+    border-top: 2px solid white; /* Línea sólida con color gris claro */
+    height: 0; /* Se establece en 0 ya que la línea se muestra mediante el borde */
+     /* Márgenes superior e inferior */
     width: 100%;
 }
 
