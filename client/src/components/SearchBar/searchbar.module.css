@@ -26,9 +26,9 @@
     align-items: center;
     justify-content: center;
 /* margin: 20px; */
-    height: auto;
+    height: 100%;
     /* width: 100%; */
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 
 
 }
@@ -37,4 +37,5 @@
     position: absolute;
     width:20px;
     height: 20px;
+    right: 10px;
 }
