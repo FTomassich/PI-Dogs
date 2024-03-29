@@ -182,8 +182,8 @@ grid-template-columns: 1fr;
     &:hover {
         transform: scale(1.04);
         transition: transform 0.3s ease-in-out;
-        text-decoration: underline; /* Subrayar el texto al pasar el cursor */
-            font-weight: bold; /* Poner en negrita el texto al pasar el cursor */
+        text-decoration: underline; 
+            font-weight: bold; 
     }
 
     height: 40px;
@@ -191,8 +191,8 @@ grid-template-columns: 1fr;
     background-color: transparent;
     cursor: pointer;
     a {
-        text-decoration: none; /* Quitar el subrayado del enlace */
-        color: inherit; /* Heredar el color del texto del botón */
+        text-decoration: none; 
+        color: inherit; 
     }
 }
 
@@ -211,25 +211,25 @@ grid-template-columns: 1fr;
         font-style:normal;
         color: white;
         font-size: 15px;
-        
-    
-        &:hover {
-            transform: scale(1.04);
-            transition: transform 0.3s ease-in-out;
-            text-decoration: underline; /* Subrayar el texto al pasar el cursor */
-            font-weight: bold; /* Poner en negrita el texto al pasar el cursor */
-        }
-    
         height: 40px;
         width: auto;
         background-color: transparent;
         cursor: pointer;
-        a {
-            text-decoration: none; /* Quitar el subrayado del enlace */
-            color: inherit; /* Heredar el color del texto del botón */
-       
-        }
-    }
+}
+    
+.button3:hover,
+.button3:focus {
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.button3 a {
+    text-decoration: none;
+    color: inherit;
+}
+    
 
 
 
