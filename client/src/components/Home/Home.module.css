@@ -35,7 +35,7 @@
     display: grid;
 grid-template-columns: 1fr;
 
-    width: 180px;
+    width: auto;
     height: 80px;
     margin:10px;
      
