@@ -31,7 +31,7 @@ const SearchBar = () => {
     <input 
         className={style.input}
         type="text"
-        placeholder='Search beard dogs by name...' 
+        placeholder='Search breed dogs...' 
         onChange={(e) => handleInputChange(e)}
         onKeyDown={handleKeyDown}
     />
