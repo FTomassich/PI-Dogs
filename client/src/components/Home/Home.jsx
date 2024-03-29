@@ -16,7 +16,7 @@ const Home = () => {
   const dispatch = useDispatch()
   const allDogs = useSelector((state) => state.dogs) //me traigo el estado del reducer
   const allTemps = useSelector((state) => state.temperaments);
-
+  const [isVisible, setIsVisible] = useState(false);
   const [orden, setOrden] = useState('')
   //Estados locales del paginado
   const [currentPage, setCurrentPage] = useState(1)//mi página actual que arranca en 1
@@ -25,6 +25,10 @@ const Home = () => {
   const indexOfFirstDog = indexOfLastDog - dogsPerPage//0
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog) //esta constante tiene los perros de la página actual
 
+
+ 
+
+  
 
 
   const paginado = (pageNumber) => {
@@ -48,6 +52,10 @@ const Home = () => {
     dispatch(getDogs());
   }
 
+//render condicional
+  const toggleSelectVisibility = () => {
+    setIsVisible(prevState => !prevState);
+  };
 
   //Handler para filtrar por temps según el select
 
@@ -98,10 +106,12 @@ const Home = () => {
         <div className={style.group}>
 
           <div className={style.section}>
-            <h3 className={style.h3}>Origin filter</h3>
+            <h3 className={style.h3}
+            onClick={toggleSelectVisibility}
+            >ORIGIN</h3>
           </div>
 
-          <div className={style.section}>
+          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
             <select
               className={style.select}
               onChange={e => handleFilterOrigin(e)}>
@@ -115,9 +125,30 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}>
-          <h3 className={style.h3}>Alfabetic order</h3>
+            <h3 className={style.h3}
+            onClick={toggleSelectVisibility}>TEMPS</h3>
+            </div>
+            <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
+          <select
+            className={style.select}
+            onChange={(e) => handleFilterTemps(e)}>
+            {allTemps.map((temperament) => (
+              <option key={temperament.id} value={temperament.name}>
+                {temperament.name}
+              </option>
+            ))}
+          </select>
           </div>
+
+
+        </div>
+
+        <div className={style.group}>
           <div className={style.section}>
+          <h3 className={style.h3}
+          onClick={toggleSelectVisibility}>A-Z</h3>
+          </div>
+          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
           <select
             className={style.select}
             onChange={e => handleSort(e)}>
@@ -132,9 +163,10 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}>
-          <h3 className={style.h3}>Order by weight</h3>
+          <h3 className={style.h3}
+          onClick={toggleSelectVisibility}>WEIGHT</h3>
           </div>
-          <div className={style.section}>
+          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
           <select
             className={style.select}
             onChange={e => handleOrderByWeight(e)}>
@@ -145,24 +177,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={style.group}>
-          <div className={style.section}>
-            <h3 className={style.h3}>Temps filter</h3>
-            </div>
-            <div className={style.section}>
-          <select
-            className={style.select}
-            onChange={(e) => handleFilterTemps(e)}>
-            {allTemps.map((temperament) => (
-              <option key={temperament.id} value={temperament.name}>
-                {temperament.name}
-              </option>
-            ))}
-          </select>
-          </div>
-
-
-        </div>
+        
 
 
       </div>
