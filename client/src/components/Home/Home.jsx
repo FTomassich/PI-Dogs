@@ -134,9 +134,11 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.section}>
+          <div className={style.section}
+         onClick={() => handleToggleVisibility(1)}>
             <h3 className={style.h3}
-              onClick={() => handleToggleVisibility(1)}>TEMPS</h3>
+              >TEMPS</h3>
+              <img src={arrow2} alt="" className={style.svg}/>
           </div>
           <div  className={`${style.section} ${
               isVisibleIndex === 1 ? style.visible : style.hidden
@@ -156,9 +158,12 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.section}>
+          <div className={style.section}
+          onClick={() => handleToggleVisibility(2)}>
+            
             <h3 className={style.h3}
-              onClick={() => handleToggleVisibility(2)}>A-Z</h3>
+              >A-Z</h3>
+              <img src={arrow2} alt="" className={style.svg}/>
           </div>
           <div className={`${style.section} ${
               isVisibleIndex === 2 ? style.visible : style.hidden
@@ -178,7 +183,8 @@ const Home = () => {
         <div className={style.group}>
           <div className={style.section}>
             <h3 className={style.h3}
-              onClick={() => handleToggleVisibility(3)}>WEIGHT</h3>
+              >WEIGHT</h3>
+              <img src={arrow2} alt="" className={style.svg}/>
           </div>
           <div className={`${style.section} ${
               isVisibleIndex === 3 ? style.visible : style.hidden
