@@ -8,7 +8,7 @@ import style from '../Home/Home.module.css'
 //importación de actions
 import { getDogs, filterOrigin, orderByName, getTemps, filterByTemps, orderByWeight } from '../../actions';
 import SearchBar from '../SearchBar/SearchBar';
-
+import arrow2 from '../../assets/arrow2.svg'
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
   const dispatch = useDispatch()
   const allDogs = useSelector((state) => state.dogs) //me traigo el estado del reducer
   const allTemps = useSelector((state) => state.temperaments);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleIndex, setIsVisibleIndex] = useState(null);
   const [orden, setOrden] = useState('')
   //Estados locales del paginado
   const [currentPage, setCurrentPage] = useState(1)//mi página actual que arranca en 1
@@ -26,9 +26,9 @@ const Home = () => {
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog) //esta constante tiene los perros de la página actual
 
 
- 
 
-  
+
+
 
 
   const paginado = (pageNumber) => {
@@ -52,10 +52,7 @@ const Home = () => {
     dispatch(getDogs());
   }
 
-//render condicional
-  const toggleSelectVisibility = () => {
-    setIsVisible(prevState => !prevState);
-  };
+
 
   //Handler para filtrar por temps según el select
 
@@ -88,14 +85,18 @@ const Home = () => {
     setOrden(`Ordenado ${e.target.value}`)
   }
 
+  const handleToggleVisibility = (index) => {
+    setIsVisibleIndex(isVisibleIndex === index ? null : index);
+  };
+
   return (
 
     <div className={style.containerHome}>
       <div className={style.containerbutton}>
-          <div className={style.twobuttons}>
-            <button className={style.button3}><Link to= '/'>Welcome</Link></button>
+        <div className={style.twobuttons}>
+          <button className={style.button3}><Link to='/'>Welcome</Link></button>
           <button className={style.button2}><Link to='/dogs'> Create Dog</Link>  </button>
-        <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs</button>
+          <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs</button>
         </div>
         <SearchBar ></SearchBar>
       </div>
@@ -105,13 +106,22 @@ const Home = () => {
       <div className={style.containerAllSelect}>
         <div className={style.group}>
 
-          <div className={style.section}>
-            <h3 className={style.h3}
-            onClick={toggleSelectVisibility}
+          <div className={style.section}
+          onClick={() => handleToggleVisibility(0)}
+          >
+            <h3 
+            className={style.h3}
+            
             >ORIGIN</h3>
+            <img src={arrow2} alt="" className={style.svg}
+            
+            />
           </div>
 
-          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
+          <div 
+          className={`${style.section} ${
+            isVisibleIndex === 0 ? style.visible : style.hidden
+          }`}>
             <select
               className={style.select}
               onChange={e => handleFilterOrigin(e)}>
@@ -126,18 +136,20 @@ const Home = () => {
         <div className={style.group}>
           <div className={style.section}>
             <h3 className={style.h3}
-            onClick={toggleSelectVisibility}>TEMPS</h3>
-            </div>
-            <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
-          <select
-            className={style.select}
-            onChange={(e) => handleFilterTemps(e)}>
-            {allTemps.map((temperament) => (
-              <option key={temperament.id} value={temperament.name}>
-                {temperament.name}
-              </option>
-            ))}
-          </select>
+              onClick={() => handleToggleVisibility(1)}>TEMPS</h3>
+          </div>
+          <div  className={`${style.section} ${
+              isVisibleIndex === 1 ? style.visible : style.hidden
+            }`}>
+            <select
+              className={style.select}
+              onChange={(e) => handleFilterTemps(e)}>
+              {allTemps.map((temperament) => (
+                <option key={temperament.id} value={temperament.name}>
+                  {temperament.name}
+                </option>
+              ))}
+            </select>
           </div>
 
 
@@ -145,17 +157,19 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}>
-          <h3 className={style.h3}
-          onClick={toggleSelectVisibility}>A-Z</h3>
+            <h3 className={style.h3}
+              onClick={() => handleToggleVisibility(2)}>A-Z</h3>
           </div>
-          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
-          <select
-            className={style.select}
-            onChange={e => handleSort(e)}>
-            <option disabled defaultValue>Ordenar alfabéticamente</option>
-            <option value="asc">Ascendente (A-Z)</option>
-            <option value="desc">Descendente (Z-A)</option>
-          </select>
+          <div className={`${style.section} ${
+              isVisibleIndex === 2 ? style.visible : style.hidden
+            }`}>
+            <select
+              className={style.select}
+              onChange={e => handleSort(e)}>
+              <option disabled defaultValue>Ordenar alfabéticamente</option>
+              <option value="asc">Ascendente (A-Z)</option>
+              <option value="desc">Descendente (Z-A)</option>
+            </select>
           </div>
 
 
@@ -163,21 +177,23 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}>
-          <h3 className={style.h3}
-          onClick={toggleSelectVisibility}>WEIGHT</h3>
+            <h3 className={style.h3}
+              onClick={() => handleToggleVisibility(3)}>WEIGHT</h3>
           </div>
-          <div className={`${style.section} ${isVisible ? style.visible : style.hidden}`}>
-          <select
-            className={style.select}
-            onChange={e => handleOrderByWeight(e)}>
-            <option disabled defaultValue>Ordenar por Peso</option>
-            <option value="asc">Ascendente🔼</option>
-            <option value="desc">Descendente🔽</option>
-          </select>
+          <div className={`${style.section} ${
+              isVisibleIndex === 3 ? style.visible : style.hidden
+            }`}>
+            <select
+              className={style.select}
+              onChange={e => handleOrderByWeight(e)}>
+              <option disabled defaultValue>Ordenar por Peso</option>
+              <option value="asc">Ascendente🔼</option>
+              <option value="desc">Descendente🔽</option>
+            </select>
           </div>
         </div>
 
-        
+
 
 
       </div>

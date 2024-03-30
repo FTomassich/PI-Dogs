@@ -3,7 +3,7 @@
 
 .containerHome {
     overflow-x: hidden;
-    display: flex; 
+    display: flex;
     width: auto;
     height: 100%;
     flex-direction: column;
@@ -25,7 +25,7 @@
     justify-content: center; */
     width: 100%;
     height: auto;
-   
+
     margin-top: 100px;
     margin-bottom: 0px;
 }
@@ -58,7 +58,7 @@
     padding: 10px;
     /* background-color: rgb(0, 128, 105); */
     background-color: rgb(0, 128, 101);
-   
+
     align-items: center;
 
     position: fixed;
@@ -83,13 +83,13 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-
-
-
-
 }
 
-
+.svg {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+}
 
 
 
@@ -166,7 +166,7 @@
         transition: transform 0.3s ease-in-out;
         text-decoration: underline;
         font-weight: bold;
-        }
+    }
 }
 
 .button2 {
@@ -254,12 +254,15 @@
 * {
     box-sizing: border-box;
 }
+
 /* Estilos para el select visible */
 .visible {
-    display: block; /* Mostrar el elemento */
-  }
-  
-  /* Estilos para el select oculto */
-  .hidden {
-    display: none; /* Ocultar el elemento */
-  }
+    display: block;
+    /* Mostrar el elemento */
+}
+
+/* Estilos para el select oculto */
+.hidden {
+    display: none;
+    /* Ocultar el elemento */
+}
