@@ -10,6 +10,7 @@ import home from '../../assets/home.svg'
 const About = () => {
     return (
         <div className={style.container}>
+            <div className={style.empty}></div>
             <a href="/home" rel="noopener noreferrer">
                 <img src={home} alt="home" className={style.svg} />
             </a>
@@ -45,6 +46,7 @@ If you want to know more about me, you can follow me on LinkedIn or GitHub.
                         <img src={github} alt="GitHub" className={style.svg} />
                     </a>
                 </div>
+                <div className={style.empty}></div>
 
             </div>
 
