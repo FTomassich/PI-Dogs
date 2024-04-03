@@ -52,8 +52,9 @@
 .button {
   cursor: pointer;
   height: 40px;
+  width: 90px;
   border: solid;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -61,7 +62,7 @@
   font-variation-settings:
     "slnt" 0; 
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgb(0, 0, 0);
  &:hover {
   transform: scale(1.02);
