@@ -62,8 +62,6 @@ const Home = () => {
     setCurrentPage(1);
   }
 
-
-  //Handler del select para filtrar según orígen
   function handleFilterOrigin(e) {
     dispatch(filterOrigin(e.target.value))
     setCurrentPage(1);
@@ -76,7 +74,6 @@ const Home = () => {
     setCurrentPage(1);
     setOrden(`Ordenado ${e.target.value}`)
   };
-
 
   function handleOrderByWeight(e) {
     e.preventDefault();
@@ -97,32 +94,28 @@ const Home = () => {
           <button className={style.button3}><Link to='/'>Welcome</Link></button>
           <button className={style.button2}><Link to='/dogs'> Create Dog</Link>  </button>
           <button className={style.button} onClick={e => { handleClick(e) }}>Refresh Dogs</button>
-        <button className={style.button3}> <Link to='/about'>About</Link></button>
+          <button className={style.button3}> <Link to='/about'>About</Link></button>
         </div>
         <SearchBar ></SearchBar>
       </div>
-
-
-
       <div className={style.containerAllSelect}>
         <div className={style.group}>
 
           <div className={style.section}
-          onClick={() => handleToggleVisibility(0)}
+            onClick={() => handleToggleVisibility(0)}
           >
-            <h3 
-            className={style.h3}
-            
+            <h3
+              className={style.h3}
+
             >ORIGIN</h3>
             <img src={arrow2} alt="" className={style.svg}
-            
+
             />
           </div>
 
-          <div 
-          className={`${style.section} ${
-            isVisibleIndex === 0 ? style.visible : style.hidden
-          }`}>
+          <div
+            className={`${style.section} ${isVisibleIndex === 0 ? style.visible : style.hidden
+              }`}>
             <select
               className={style.select}
               onChange={e => handleFilterOrigin(e)}>
@@ -136,13 +129,12 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}
-         onClick={() => handleToggleVisibility(1)}>
+            onClick={() => handleToggleVisibility(1)}>
             <h3 className={style.h3}
-              >TEMPS</h3>
-              <img src={arrow2} alt="" className={style.svg}/>
+            >TEMPS</h3>
+            <img src={arrow2} alt="" className={style.svg} />
           </div>
-          <div  className={`${style.section} ${
-              isVisibleIndex === 1 ? style.visible : style.hidden
+          <div className={`${style.section} ${isVisibleIndex === 1 ? style.visible : style.hidden
             }`}>
             <select
               className={style.select}
@@ -160,14 +152,13 @@ const Home = () => {
 
         <div className={style.group}>
           <div className={style.section}
-          onClick={() => handleToggleVisibility(2)}>
-            
+            onClick={() => handleToggleVisibility(2)}>
+
             <h3 className={style.h3}
-              >A-Z</h3>
-              <img src={arrow2} alt="" className={style.svg}/>
+            >A-Z</h3>
+            <img src={arrow2} alt="" className={style.svg} />
           </div>
-          <div className={`${style.section} ${
-              isVisibleIndex === 2 ? style.visible : style.hidden
+          <div className={`${style.section} ${isVisibleIndex === 2 ? style.visible : style.hidden
             }`}>
             <select
               className={style.select}
@@ -182,13 +173,13 @@ const Home = () => {
         </div>
 
         <div className={style.group}>
-          <div className={style.section}>
+          <div className={style.section}
+          onClick={() => handleToggleVisibility(3)}>
             <h3 className={style.h3}
-              >WEIGHT</h3>
-              <img src={arrow2} alt="" className={style.svg}/>
+            >WEIGHT</h3>
+            <img src={arrow2} alt="" className={style.svg} />
           </div>
-          <div className={`${style.section} ${
-              isVisibleIndex === 3 ? style.visible : style.hidden
+          <div className={`${style.section} ${isVisibleIndex === 3 ? style.visible : style.hidden
             }`}>
             <select
               className={style.select}
