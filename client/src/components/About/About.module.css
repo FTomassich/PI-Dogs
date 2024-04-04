@@ -65,9 +65,14 @@ justify-content: space-evenly;
     width: 45px;
  }
  .svg:hover {
-    transform: translateY(-5px); /* Pequeño salto hacia arriba al acercar el cursor */
+    transform: translateY(-5px); 
   }
 
   .empty{
    height: 40px;
+  }
+  @media (max-width: 768px) {
+   .h1{
+      font-size: 35px;
+   }
   }
