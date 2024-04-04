@@ -76,10 +76,10 @@
   @media (max-width: 768px) {
     .h1{
         font-size: 30px;
-        margin-top: 50px;
+        /* margin-top: 100px; */
     }
     .image {
-      max-height: 200px; /* Cambiar este valor según sea necesario */
+      max-height: 250px; /* Cambiar este valor según sea necesario */
     }
 
     
