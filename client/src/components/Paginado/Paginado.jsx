@@ -4,7 +4,7 @@ import style from '../Paginado/Paginado.module.css';
 
 const Paginado = ({paginado, dogsPerPage, allDogs, currentPage}) => {
   const totalPages = Math.ceil (allDogs/dogsPerPage);
-  const pageRange = 7;
+  const pageRange = 5;
 
   let startPage = Math.max (1, currentPage - Math.floor(pageRange / 2));
   let endPage = startPage + pageRange - 1;
