@@ -204,12 +204,12 @@ const Home = () => {
 
       </div>
 
-      {/* <Paginado
+      <Paginado
         dogsPerPage={dogsPerPage}
         allDogs={allDogs.length}
         currentPage={currentPage}
         paginado={paginado}
-      /> */}
+      />
 
     </div>
   )

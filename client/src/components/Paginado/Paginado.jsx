@@ -1,3 +1,4 @@
+
 import React from 'react'
 import style from '../Paginado/Paginado.module.css';
 
@@ -21,7 +22,9 @@ const Paginado = ({paginado, dogsPerPage, allDogs, currentPage}) => {
         <ul className={style.ul}>
           {currentPage > 1 && (
             <li className={style.number} key="previous">
-              <button onClick={() => paginado(currentPage - 1)}>Previous</button>
+              <button 
+              className={style.button}
+              onClick={() => paginado(currentPage - 1)}>Previous</button>
             </li>
           )}
           {pageNumbers.map((number) => (
@@ -31,7 +34,9 @@ const Paginado = ({paginado, dogsPerPage, allDogs, currentPage}) => {
           ))}
           {currentPage < totalPages && (
             <li className={style.number} key="next">
-              <button onClick={() => paginado(currentPage + 1)}>Next</button>
+              <button 
+              className={style.button}
+              onClick={() => paginado(currentPage + 1)}>Next</button>
             </li>
           )}
         </ul>

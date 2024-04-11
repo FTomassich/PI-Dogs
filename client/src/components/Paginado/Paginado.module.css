@@ -1,37 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .nav {
-  
-    background-color: #040505fb;
-    font-family:  'arial', cursive;
-    color: rgb(252, 252, 252);
-  }
- .ul {
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: white;
-   
+  width: 100%;
+  height: auto;
 
-  }
-  
+  background-color: #040505fb;
+  font-family: 'arial', cursive;
+  color: rgb(252, 252, 252);
+}
 
-  li {
-    
-    padding: 10px;
-    
-    
-  }
+.ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+li {
+  font-family: "PT Sans", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+
+  padding: 10px;
+}
+
+.button{
+  font-family: "PT Sans", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+.number{
+  font-family: "PT Sans", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
 
 
-  
-  li:hover {
-    background-color: rgba(26, 90, 17, 0.973);
-    
-  } 
+li:hover {
+  background-color: rgb(0, 43, 35);
 
-  .active{
-    background-color: blueviolet;
-  }
+}
+
+.active {
+  background-color: rgb(0, 43, 35);
+}
