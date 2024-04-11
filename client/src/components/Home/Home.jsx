@@ -26,11 +26,6 @@ const Home = () => {
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog) //esta constante tiene los perros de la página actual
 
 
-
-
-
-
-
   const paginado = (pageNumber) => {
     setCurrentPage(pageNumber)
   }
