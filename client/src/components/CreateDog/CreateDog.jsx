@@ -81,7 +81,7 @@ function handleSubmit(e) {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={style.container}>
             <Link to= '/home'><button>🏠Go Home!</button></Link>
             <h1 className={style.titulo}> Create your Dog! </h1>
 
