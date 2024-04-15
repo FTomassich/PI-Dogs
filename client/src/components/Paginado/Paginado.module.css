@@ -21,22 +21,21 @@
 
 li {
   font-family: "PT Sans", sans-serif;
-    font-weight: 800;
-    font-style: bold;
-
-  padding: 10px;
+  font-weight: 800;
+  font-style: bold;
+  padding: 5px;
 }
 
-.button{
+.button {
   font-family: "PT Sans", sans-serif;
-    font-weight: 800;
-    font-style: bold;
+  font-weight: 800;
+  font-style: bold;
 }
 
-.number{
+.number {
   font-family: "PT Sans", sans-serif;
-    font-weight: 800;
-    font-style: bold;
+  font-weight: 800;
+  font-style: bold;
 }
 
 
