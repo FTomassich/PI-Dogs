@@ -145,15 +145,15 @@
 
 }
 @media (min-width: 400px) and (max-width: 991px)  {
-    .formcontainer{
-        width: 100vw;
-        height: 100vh;
+   
+    .formContainer{
+        width: 60vw;
     }
     .input{
         width: 30vw;
     }
     .titulo{
-        width: 50%;
+        width: 60vw;
         height: 40px;
         font-size: 20px;
         align-items: center;
