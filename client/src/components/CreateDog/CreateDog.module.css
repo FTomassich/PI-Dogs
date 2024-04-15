@@ -146,11 +146,8 @@
     height: 8vh;
 
 }
-@media only screen and (min-width: 576px) and (max-width: 991px)  {
-    .formContainer{
-        width: 50%;
-    }
-
+@media only screen and (min-width: 500px) and (max-width: 991px)  {
+    
     .input{
         width: 30vw;
     }
