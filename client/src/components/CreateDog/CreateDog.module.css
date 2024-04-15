@@ -144,7 +144,7 @@
     height: 8vh;
 
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .formContainer{
         width: 70%;
     }
