@@ -107,9 +107,7 @@
 }
 
 @media (min-width: 400px) and (max-width: 991px)  {
-   
-    
-    .text{
-        font-size: 12px;
+    .itemCard{
+        font-size: 13px;
     }
 }
