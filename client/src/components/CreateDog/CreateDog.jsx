@@ -83,11 +83,12 @@ function handleSubmit(e) {
   return (
     <div className={style.container}>
             <Link to= '/home'><button>🏠Go Home!</button></Link>
-            <h1 className={style.titulo}> Create your Dog! </h1>
+            <h1 className={style.titulo}> Post your Doggy in this APP! </h1>
 
             <div className={style.formContainer}>
 
             <form
+            className={style.form}
             onSubmit = {(e)=> handleSubmit(e)}
             >
                 
