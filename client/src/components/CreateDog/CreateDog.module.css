@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .container{
     display:flex;
     flex-direction: column;
@@ -8,13 +9,13 @@
 
 
 .formContainer {
+    width: 50vw;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-   
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -83,6 +84,7 @@
 .input {
     
     display: flex;
+    width: 30vw;
     height: 30px;
     margin-bottom: 0;
     border-radius: 5px;
@@ -144,16 +146,19 @@
     height: 8vh;
 
 }
-@media (max-width: 700px) {
+@media only screen and (min-width: 576px) and (max-width: 991px)  {
     .formContainer{
-        width: 70%;
+        width: 50%;
     }
 
     .input{
         width: 30vw;
     }
     .titulo{
-        width: 70%;
+        width: 50%;
+        height: 40px;
+        font-size: 20px;
+        align-items: center;
     }
     
 
