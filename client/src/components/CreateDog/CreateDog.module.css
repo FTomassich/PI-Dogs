@@ -67,7 +67,7 @@
     width: 50%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.534);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -162,7 +162,4 @@
         font-size: 15px;
         align-items: center;
     }
-    
-
-
 }
