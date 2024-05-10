@@ -7,7 +7,7 @@
     width: auto;
     height: 100%;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: bold;
@@ -36,10 +36,9 @@
 
 .containerbutton {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 80px;
-    /* height: 20%; */
     place-items: center;
     padding: 10px;
     background-color: rgb(77, 77, 77);
@@ -106,23 +105,6 @@
     align-items: center;
     display: flex;
 
-}
-
-
-@media (max-width: 768px) {
-    .containerCards {
-        grid-template-columns: 1fr;
-    }
-
-    .containerAllSelect {
-        grid-template-columns: 1fr 1fr;
-        margin-top: 160px;
-    }
-
-    .containerbutton {
-        grid-template-columns: 1fr;
-        height: 130px;
-    }
 }
 
 
@@ -246,4 +228,37 @@
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 767px) {
+    .containerCards {
+        grid-template-columns: 1fr;
+    }
+
+    .containerAllSelect {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 160px;
+    }
+
+    .containerbutton {
+        grid-template-columns: 1fr;
+        height: 130px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos específicos para dispositivos móviles medianos */
+    .containerCards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .containerbutton {
+        grid-template-columns: 1fr;
+        height: 130px;
+    }
+    .containerAllSelect {
+        
+        margin-top: 160px;
+    }
+
 }
