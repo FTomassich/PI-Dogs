@@ -89,6 +89,8 @@
     align-items: center;
     align-content: center;
     color: white;
+    opacity: 1; /* Ajustar opacidad inicial */
+    transition: opacity 0.9s ease; /* Transición gradual de opacidad */
 }
 
 .h3 {
@@ -222,12 +224,17 @@
 
 
 .visible {
-    display: block;
+    /* display: block; */
+    display: flex;
+    opacity: 1; /* Ajustar opacidad visible */
+
 }
 
 
 .hidden {
-    display: none;
+    
+    opacity: 0; /* Ajustar opacidad oculta */
+    /* display: none; */
 }
 
 @media (max-width: 767px) {
