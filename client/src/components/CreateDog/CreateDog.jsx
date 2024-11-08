@@ -13,7 +13,7 @@ const CreateDog = () => {
   // const history= useHistory
   const temperaments = useSelector ((state)=> state.temperaments) //el use selector apunta al estado "temperaments" del reducer que se llena con la accion GET TEMPS
 
-  const [input, setInput] = useState({         //creo un estado para guardar el form
+  const [input, setInput] = useState({  //creo un estado para guardar el form
       
       name: "",
       image: "",
@@ -34,7 +34,8 @@ const CreateDog = () => {
     })
     console.log (input)
 }
-//Manejo del select
+
+//Manejo del Select
 function handleSelect(e){
     setInput({
         ...input,
