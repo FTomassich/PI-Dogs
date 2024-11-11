@@ -44,8 +44,6 @@ function handleSelect(e){
     })
 }
 
-
-
 //Manejo del Submit (botón)
 function handleSubmit(e) {
   e.preventDefault();
@@ -68,7 +66,7 @@ function handleSubmit(e) {
       temperament: []
     });
 
-    // history.push('/home');
+   
   } else {
     
     console.log("Formulario no enviado debido a errores:", formErrors);
