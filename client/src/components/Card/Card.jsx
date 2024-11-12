@@ -22,8 +22,7 @@ const Card = ({id,image,name,temperament,weight}) => {
 <h2 className={style.itemWeight}>Weight: {weight}</h2>
 
 
-</div>
-    
+</div>   
 </div>//Cierre Card
   )
 }

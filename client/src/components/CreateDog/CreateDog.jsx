@@ -99,7 +99,7 @@ function handleSubmit(e) {
                     type= "text"
                     value= {input.name}
                     name= "name"
-                    onChange={(e)=>handleChange(e)} //le agregamos una propiedad al input que sea Onchange y que contenga el Handle
+                    onChange={(e)=>handleChange(e)} //Le agregamos una propiedad al input que sea Onchange y que contenga el Handle
                     />{errors.name && <p className={style.error}>{errors.name}</p>}
                     </div>
 

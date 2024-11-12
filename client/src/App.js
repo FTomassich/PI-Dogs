@@ -16,7 +16,6 @@ function App() {
         <Route exact path= '/home' element= {<Home/>}/>
         <Route exact path= '/dogs' element= {<CreateDog/>}/>
         <Route exact path= '/about' element= {<About/>}/>
-        
       </Routes>
       
     </div>
