@@ -23,7 +23,7 @@ const Card = ({id,image,name,temperament,weight}) => {
 
 
 </div>   
-</div>//Cierre Card
+</div>
   )
 }
 
