@@ -5,7 +5,7 @@ export function getDogs() {
     return async function (dispatch) {
         try {
             // const response = await fetch("http://localhost:3001/dogs");
-            const response = await fetch("https://invigorating-curiosity-production.up.railway.app/dogs");
+            const response = await fetch("https://pi-dogs-api-production.up.railway.app/dogs");
             const data= await response.json()
 
             dispatch({
@@ -45,7 +45,7 @@ export function searchByName (name) {  //el name me llega por "payload" (input d
     return async function (dispatch){
         try{
             // var json=await axios.get ("http://localhost:3001/dogs?name=" + name);
-            var json=await axios.get ("https://invigorating-curiosity-production.up.railway.app/dogs?name=" + name);
+            var json=await axios.get ("https://pi-dogs-api-production.up.railway.app/dogs?name=" + name);
             return dispatch  ({
         type: 'SEARCH_BY_NAME',
         payload: json.data
@@ -61,7 +61,7 @@ export function getTemps(){
     return async function (dispatch){
         try{
             // const response=await fetch ("http://localhost:3001/temperaments", {});
-            const response=await fetch ("https://invigorating-curiosity-production.up.railway.app/temperaments", {});
+            const response=await fetch ("https://pi-dogs-api-production.up.railway.app/temperaments", {});
             const data=await response.json();
             return dispatch ({type: 'GET_TEMPS', payload: data});
         } catch (error) {
@@ -83,7 +83,7 @@ export const filterByTemps = (temperament) => ({
     return async function (dispatch){
     try{
         // const response= await axios.post("http://localhost:3001/dogs", payload);
-        const response= await axios.post("https://invigorating-curiosity-production.up.railway.app/dogs", payload);
+        const response= await axios.post("https://pi-dogs-api-production.up.railway.app/dogs", payload);
         console.log(response)
         return response;     
     }catch (error) {
@@ -97,7 +97,7 @@ export function getDetail(id) {
     return async function (dispatch) {
         try {
             // var json = await axios.get("http://localhost:3001/dogs/" + id);
-            var json = await axios.get("https://invigorating-curiosity-production.up.railway.app/dogs/" + id);
+            var json = await axios.get("https://pi-dogs-api-production.up.railway.app/dogs/" + id);
             console.log(json.data); // Agrego esta línea para verificar la respuesta
             return dispatch({
                 type: 'GET_DETAILS',
